@@ -1,0 +1,193 @@
+@charset 'utf-8';
+@font-face {
+  font-family: "GangwonEdu_OTFBoldA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GangwonEduPowerExtraBoldA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  --font1: "GangwonEdu_OTFBoldA";
+  --font2: "GangwonEduPowerExtraBoldA";
+  --colorY: #fff177;
+  --colorG: rgb(33, 148, 100);
+  --w: calc(100% - 4rem);
+}
+a,
+p {
+  font-family: var(--font1);
+}
+.wrap {
+  max-width: 490px;
+  width: calc(100% - 4rem);
+  margin: auto;
+  height: 100vh;
+  position: relative;
+  background-color: var(--colorY);
+}
+.topSec {
+  position: relative;
+}
+.topBanner {
+  background-color: rgb(33, 148, 100);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deco {
+  width: 50px;
+}
+.logo {
+  width: 100px;
+}
+.topTitle {
+  padding: 3rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.topTitle h2 {
+  width: 100%;
+  text-align: center;
+  font-family: var(--font2);
+  font-size: 25px;
+}
+.topTitle h2 span {
+  color: rgb(33, 148, 100);
+}
+.mySwiper {
+  padding-top: 2rem;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--colorY);
+}
+
+.guide_chat {
+  width: var(--w);
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  transform: translateX(-50%);
+}
+.guide_chat label {
+  width: 100%;
+}
+.guide_chat button {
+  border: none;
+  outline: none;
+  background-color: white;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 16px;
+}
+#foodName {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: var(--font1);
+  font-size: 16px;
+  padding: 1.5rem 1rem;
+}
+.ref {
+  padding: 10rem 0;
+  text-align: center;
+  font-size: 14px;
+}
+.ref span {
+  color: red;
+}
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  z-index: 100;
+}
+.loader:after {
+  content: "";
+  width: 490px;
+  height: calc(80.2vh + 50px);
+  top: -108.4%;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: -1;
+}
+.loader img {
+  display: block;
+  width: 200px;
+}
+.chatCon {
+  padding: 2rem;
+  height: calc(100vh - 130px);
+  overflow-y: scroll;
+}
+.chat_message > p {
+  padding-top: 2rem;
+  font-family: var(--font2);
+  font-size: 18px;
+}
+.chat_message .assistant {
+  background-color: white;
+  font-family: var(--font1);
+  font-size: 16px;
+  padding: 1.5rem;
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.chat_message .assistant:after {
+  content: "";
+  width: 70px;
+  height: 30px;
+  background-color: rgba(113, 71, 18, 0.4);
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.chat-input {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.chat-input input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-family: var(--font1);
+  font-size: 16px;
+}
+#btnAsk {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.adSec {
+  border: 1px solid #dfdfdf;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

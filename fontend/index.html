@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="my_reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="topSec">
+        <div class="topBanner">
+          <img class="deco" src="./img/tool.png" alt="tool" />
+          <img class="logo" src="./img/logo.png" alt="logo" />
+          <img class="deco" src="./img/tool.png" alt="tool" />
+        </div>
+        <div class="topTitle">
+          <h2>어떤 <span>레시피</span>가 필요하신가요?</h2>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./img/food2.png" alt="topImg1" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/food3.png" alt="topImg2" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/food4.png" alt="topImg3" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./img/food5.png" alt="topImg4" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="guide_chat">
+          <label for="foodName">
+            <input
+              type="text"
+              id="foodName"
+              placeholder="궁금한 음식의 이름을 입력하세요."
+            />
+          </label>
+          <button id="btnSend"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+      </div>
+      <p class="ref">
+        해당 서비스는 <span>chatGPT</span>를 활용한 AI 답변 기능을 제공하며<br />
+        내용이 <span>부정확</span>할 수 있습니다.<br />
+        추가 질문을 통해 원하는 답변을 얻을 수 있습니다.
+      </p>
+      <div class="loader">
+        <img src="./img/loaderRE.gif" alt="loader" />
+        <img class="loaderTxt" src="./img/loaderTxt.gif" alt="loader" />
+      </div>
+      <div class="chatCon">
+        <!-- <p class="assistant">gpt대답</p> -->
+        <div class="chat-input">
+          <input type="text" placeholder="다른 레시피가 궁금하신가요?" />
+          <button id="btnAsk"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+      </div>
+      <div class="adSec">
+        <ins
+          class="kakao_ad_area"
+          style="display: block"
+          data-ad-unit="DAN-RE1pWWOGWL5aFbL9"
+          data-ad-width="320"
+          data-ad-height="50"
+        ></ins>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//t1.daumcdn.net/kas/static/ba.min.js"
+      async
+    ></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
